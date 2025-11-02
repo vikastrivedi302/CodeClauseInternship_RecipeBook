@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Book | CodeClause Internship</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍳 Recipe Book</h1>
+
+    <!-- 🔍 Search Bar -->
+    <input type="text" id="searchBox" placeholder="Search Recipe..." />
+
+    <div class="form">
+      <input type="text" id="recipeName" placeholder="Recipe Name" />
+      <textarea id="recipeIngredients" placeholder="Ingredients (comma separated)"></textarea>
+      <textarea id="recipeSteps" placeholder="Steps"></textarea>
+      <input type="file" id="recipeImage" accept="image/*" />
+      <button id="addRecipe">Add Recipe</button>
+      <button id="updateRecipe" style="display:none;">Update Recipe</button>
+    </div>
+
+    <h2>All Recipes</h2>
+    <div id="recipeList" class="recipe-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
